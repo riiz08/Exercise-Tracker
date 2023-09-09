@@ -35,7 +35,7 @@ app.post("/api/users", (req, res) => {
       _id: userId
     })
   } catch (err) {
-    res.json(err)
+    res.json({message: err})
   }
 })
 
